@@ -1,12 +1,17 @@
 import { useContext, useState } from "react";
-import { UserContext } from "./userContext/UserProvider";
+import { UserContext } from "./userContext/UserContext";
 
-function ChangeName({ onNameChanged }) {
+function ChangeName() {
 
   const [nameInput, setNameInput] = useState("");
+  const { currentUser, setCurrentUser } = useContext(UserContext)
 
-  const onButtonClick = () => {  
-    onNameChanged(nameInput)
+  const onButtonClick = () => {
+    // onNameChanged(nameInput)
+    setCurrentUser({
+      ...currentUser,
+      name: nameInput
+    })
   }
 
   return (<div>
