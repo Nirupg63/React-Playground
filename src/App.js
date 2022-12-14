@@ -10,6 +10,7 @@ import { createComponent } from './factory/Factory';
 import { StateTest } from './stateRenderExperiments/StateTest';
 import { ContextTest2 } from './context/ContextTest2';
 import { ContextTest3 } from './context/ContextTest3';
+import { HtmlTest } from './htmlReference/HtmlTest';
 
 function App() {
   const [page, setPage] = useState(true);
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>React Testing Application</h1>
       <button onClick={e => setPage(!page)}>Change Page</button>
       {/* { page ? <PageOne></PageOne> : <Suspense><PageTwo></PageTwo></Suspense>} */}
       {/* { page ? <PageOne></PageOne> : <UMemo></UMemo>}       */}
@@ -29,7 +31,7 @@ function App() {
       {/* Context Example */}
       {/* <ContextTest></ContextTest> */}
       {/* <ContextTest2></ContextTest2> */}
-      <ContextTest3></ContextTest3>
+      {/* <ContextTest3></ContextTest3> */}
 
       {/* <RefTest></RefTest> */}
       {/* { createComponent('Comp1') } 
@@ -37,6 +39,9 @@ function App() {
 
       {/* State Experiments */}
       {/* <StateTest></StateTest> */}
+
+      {/* HTML Experiments */}
+      <HtmlTest></HtmlTest>
 
     </div >
   );
