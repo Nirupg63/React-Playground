@@ -6,5 +6,4 @@ const Content = () => {
     </div>)
 }
 
-
 export { Content }

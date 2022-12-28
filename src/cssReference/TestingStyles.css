@@ -1,0 +1,15 @@
+h1 {
+    color: blue
+}
+
+.custom {
+    color: red;
+}
+
+h2::before {
+    content: "^^";
+}
+
+h2::after {
+    content: "0.0";
+}

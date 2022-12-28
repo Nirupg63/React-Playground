@@ -11,6 +11,8 @@ import { StateTest } from './stateRenderExperiments/StateTest';
 import { ContextTest2 } from './context/ContextTest2';
 import { ContextTest3 } from './context/ContextTest3';
 import { HtmlTest } from './htmlReference/HtmlTest';
+import { TestingStyles } from './cssReference/TestingStyles';
+import { JsTest } from './JSReference/JsTest';
 
 function App() {
   const [page, setPage] = useState(true);
@@ -41,7 +43,13 @@ function App() {
       {/* <StateTest></StateTest> */}
 
       {/* HTML Experiments */}
-      <HtmlTest></HtmlTest>
+      {/* <HtmlTest></HtmlTest> */}
+
+      {/* CSS Reference */}
+      {/* <TestingStyles></TestingStyles> */}
+
+      {/* Js Reference */}
+      <JsTest></JsTest>
 
     </div >
   );
